@@ -2070,7 +2070,7 @@ class layout extends common {
 	 */
 	public function showFooterText() {
 		if($footerText = $this->getData(['theme', 'footer', 'text']) OR $this->getUrl(0) === 'theme') {
-			echo '<div id="footerText"><span id="footerFontText">' . nl2br($footerText) . '</span></div>';
+			echo '<div id="footerText"><div id="footerFontText">' . nl2br($footerText) . '</div></div>';
 		}
 	}
 
